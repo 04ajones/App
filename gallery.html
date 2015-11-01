@@ -1,0 +1,118 @@
+<!Doctype html> 
+<html>
+<!--begin page head-->
+<head>
+<!--title added to the page-->
+<title> Gallery </title>
+
+<!--linking the stylesheets and also the jquery script code-->
+<link rel="stylesheet" href="themes/Purple.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!--ending the head of the page-->
+</head>
+
+<!--beginning the body of the page-->
+<body>
+
+<!--setting a theme for this section of code-->
+<div data-role="page" data-theme="c">
+
+<!--creating the panel with an ID called myPanel-->
+  <div data-role="panel" id="myPanel" data-position="right" data-display="overlay" data-theme = "c"> 
+      <!--adding a header-->
+	<h2>Menu</h2>
+	<br>
+	<!--creating a list view of buttons on the panel-->
+    <ul data-role="listview" data-insert="true">
+	<li><a href="Home.html">Home</a></li>
+	<li><a href="Products.html">Products</a></li>
+	<li><a href="Promotions.html">Promotions</a></li>
+	<li><a href="Findus.html">Find Us</a></li>
+	<li><a href="Contactus.html">Contact Us</a></li>
+	</ul>
+  </div> 
+
+  <!--create a header-->
+<div data-role="header" data-theme="c">
+<!--adding an image-->
+<img src="greenwich.png"> 
+
+<!--create a button to link to the panel-->
+<div data-role="main" data-position="right" class="ui-content">
+ <a href="#myPanel" class="ui-icon-bars ui-btn-icon-notext ui-btn-right"></a>
+   </div>
+</div>
+
+<!--adding an image with a set size-->
+<img src="bar.jpg" style = "width:480px;height:150px;"> 
+
+<div data-role="content" data-theme="c">
+<!--adding a header-->
+<h2>Gallery</h2>
+	<!--paragraph with some text-->
+	<p> Please browse some of the pictures of the gym and equipment that we have to offer. To enlarge the image please click on it </p>
+	<p>
+<!--add images to the page with reference to the modal-->
+<a href="#popupgym1" data-rel="popup" data-position-to="window" role="button" data-toggle="modal" data-transition="fade"><img src="gym1.jpg" style = "width:160px;height:100px;"></a>
+<a href="#popupgym2" data-rel="popup" data-position-to="window" role="button" data-toggle="modal" data-transition="fade"><img src="gym2.jpg" style = "width:160px;height:100px;"></a>
+<a href="#popupgym3" data-rel="popup" data-position-to="window" role="button" data-toggle="modal" data-transition="fade"><img src="gym3.jpg" style = "width:160px;height:100px;"></a>
+<a href="#popupgym4" data-rel="popup" data-position-to="window" role="button" data-toggle="modal" data-transition="fade"><img src="gym4.jpg" style = "width:160px;height:100px;"></a>
+<a href="#popupgym5" data-rel="popup" data-position-to="window" role="button" data-toggle="modal" data-transition="fade"><img src="gym5.jpg" style = "width:160px;height:100px;"></a>
+<a href="#popupgym6" data-rel="popup" data-position-to="window" role="button" data-toggle="modal" data-transition="fade"><img src="gym6.jpg" style = "width:160px;height:100px;"></a>
+<!--creating the modal and adding a cloase button the window-->
+<div data-role="popup" id="popupgym1" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="gym1.jpg" alt="Gym 1">
+</div>
+<div data-role="popup" id="popupgym2" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="gym2.jpg" alt="Gym 2">
+</div>
+<div data-role="popup" id="popupgym3" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="gym3.jpg" alt="Gym 3">
+</div>
+<div data-role="popup" id="popupgym4" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="gym4.jpg" alt="Gym 3">
+</div>
+<div data-role="popup" id="popupgym5" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="gym5.jpg" alt="Gym 3">
+</div>
+<div data-role="popup" id="popupgym6" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="gym6.jpg" alt="Gym 3">
+</div>
+</p>
+</div>
+
+<!--script that makes the impage popup and increase size-->
+<script>
+$( document ).on( "pagecreate", function() {
+    $( ".photopopup" ).on({
+        popupbeforeposition: function() {
+            var maxHeight = $( window ).height() - 60 + "px";
+            $( ".photopopup img" ).css( "max-height", maxHeight );
+        }
+    });
+});
+</script>
+
+<!--footer-->
+<div data-role="footer" data-position="fixed" data-theme="c">
+	<!--navbar created in the footer at the bottom of the page-->
+	<div data-role="navbar" data-icompos="bottom">
+	<!--links are put next to each other with icons and text-->
+	<ul>
+	<li><a href="Gallery.html" data-icon="camera">Gallery</a></li>
+	<li><a href="Contactus.html" data-icon="mail">Contact Us</a></li>
+	<li><a href="Findus.html" data-icon="navigation">Find Us</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+

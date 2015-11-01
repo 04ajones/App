@@ -1,0 +1,94 @@
+<!Doctype html> 
+<html>
+<!--begin page head-->
+<head>
+<!--title added to the page-->
+<title> Contact Us </title>
+
+<!--linking the stylesheets and also the jquery script code-->
+<link rel="stylesheet" href="themes/Purple.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!--ending the head of the page-->
+</head>
+
+<!--beginning the body of the page-->
+<body>
+
+<!--setting a theme for this section of code-->
+<div data-role="page" data-theme="c">
+
+<!--creating the panel with an ID called myPanel-->
+  <div data-role="panel" id="myPanel" data-position="right" data-display="overlay" data-theme = "c"> 
+    <!--adding a header-->
+    <h2>Menu</h2>
+	<br>
+	<!--creating a list view of buttons on the panel-->
+    <ul data-role="listview" data-insert="true">
+	<li><a href="Home.html">Home</a></li>
+	<li><a href="Promotions.html">Promotions</a></li>
+	<li><a href="Gallery.html">Gallery</a></li>
+	<li><a href="Findus.html">Find Us</a></li>
+	<li><a href="Contactus.html">Contact Us</a></li>
+	</ul>
+  </div> 
+
+  <!--create a header-->
+<div data-role="header" data-theme="c">
+<!--adding an image-->
+<img src="greenwich.png"> 
+
+<!--create a button to link to the panel-->
+<div data-role="main" data-position="right" class="ui-content">
+ <a href="#myPanel" class="ui-icon-bars ui-btn-icon-notext ui-btn-right"></a>
+   </div>
+</div>
+
+<!--adding an image with a set size-->
+<img src="bar.jpg" style = "width:480px;height:150px;"> 
+
+<div data-role="content" data-theme="c">
+<!--adding a header-->
+<h2> Products </h2>
+<!--paragraph with a hyperlink to the find us page-->
+<p>To purchase any of the products below please come and <a href="Findus.html">visit us</a>.</p>
+<!--floating image in a paragraph-->
+<p align = "justify" ><img src="product1.jpg" style = "float:left"> <b>Protein Shake</b> <br>Try out our amazing protein shake, it tastes amazing and does great things for your body! Buy now for only £10!
+	</p>
+	<br>
+	<!--floating image in a paragraph-->
+<p align = "justify" ><img src="product2.jpg" style = "float:right"> <b>Exercise Mat</b> <br>Purchase one of our mats so that you can practise what you've done in your yoga classes. You can even bring it in with you if you'd prefer a less used mat. Purchase for only £15!
+	</p>
+	<br>
+	<!--floating image in a paragraph-->
+<p align = "justify" ><img src="product3.jpg" style = "float:left"> <b>Weights</b> <br>Pump up those muscles at home so that when you come to the gym you're able to lift more. All of these for only £30!
+	</p>
+	<br>
+	<!--floating image in a paragraph-->
+<p align = "justify" ><img src="product4.jpg" style = "float:right"> <b>Medicine Ball</b> <br>These are great to use when you'd like to make simple exercises such as squats a bit more challenging. These start from only £15!
+	</p>
+
+</div>
+
+<!--footer-->
+<div data-role="footer" data-theme="c">
+	<!--navbar created in the footer at the bottom of the page-->
+	<div data-role="navbar" data-icompos="bottom">
+	<!--links are put next to each other with icons and text-->
+	<ul>
+	<li><a href="gallery.html" data-icon="camera">Gallery</a></li>
+	<li><a href="Contactus.html" data-icon="mail">Contact Us</a></li>
+	<li><a href="Findus.html" data-icon="navigation">Find Us</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+

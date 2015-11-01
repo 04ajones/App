@@ -1,0 +1,81 @@
+<!Doctype html> 
+<html>
+<!--begin page head-->
+<head>
+<!--title added to the page-->
+<title> Find Us </title>
+
+<!--linking the stylesheets and also the jquery script code-->
+<link rel="stylesheet" href="themes/Purple.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!--ending the head of the page-->
+</head>
+
+<!--beginning the body of the page-->
+<body>
+
+<!--setting a theme for this section of code-->
+<div data-role="page" data-theme="c">
+
+<!--creating the panel with an ID called myPanel-->
+  <div data-role="panel" id="myPanel" data-position="right" data-display="overlay" data-theme = "c"> 
+    <!--adding a header-->
+	<h2>Menu</h2>
+	<br>
+	<!--creating a list view of buttons on the panel-->
+    <ul data-role="listview" data-insert="true">
+	<li><a href="home.html">Home</a></li>
+	<li><a href="Products.html">Products</a></li>
+	<li><a href="Promotions.html">Promotions</a></li>
+	<li><a href="Gallery.html">Gallery</a></li>
+	<li><a href="Contactus.html">Contact Us</a></li>
+	</ul>
+  </div> 
+
+  <!--create a header-->
+<div data-role="header" data-theme="c">
+<!--adding an image-->
+<img src="greenwich.png"> 
+
+<!--create a button to link to the panel-->
+<div data-role="main" data-position="right" class="ui-content">
+ <a href="#myPanel" class="ui-icon-bars ui-btn-icon-notext ui-btn-right"></a>
+   </div>
+</div>
+
+<!--adding an image with a set size-->
+<img src="bar.jpg" style = "width:480px;height:150px;"> 
+
+<div data-role="content" data-theme="c">
+<!--adding a header-->
+<h2> Find Us </h2>
+<!--paragraph with some text-->
+	<p> If you would like to contact us to find out more information or to join us you can visit us at the below. 
+	Or if you would like us to contact you then please go to our <a href="Contactus.html">Contact page</a>.</p>
+	<!--google map frame inserted-->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19881.89262381283!2d0.0032405820312500027!3d51.47217165801286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xb22bd977bb103398!2sGreenwich+Fitness+Club!5e0!3m2!1sen!2suk!4v1437840190126" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<!--footer-->
+<div data-role="footer" data-position="fixed" data-theme="c">
+	<!--navbar created in the footer at the bottom of the page-->
+	<div data-role="navbar" data-icompos="bottom">
+	<!--links are put next to each other with icons and text-->
+	<ul>
+	<li><a href="gallery.html" data-icon="camera">Gallery</a></li>
+	<li><a href="Contactus.html" data-icon="mail">Contact Us</a></li>
+	<li><a href="Findus.html" data-icon="navigation">Find Us</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,101 @@
+<!Doctype html> 
+<html>
+<!--Beginning the head of the file-->
+<head>
+<!--creating a title for the page-->
+<title> Home </title>
+
+<!--linking the stylesheets and also the jquery script code-->
+<link rel="stylesheet" href="themes/Purple.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<!--ending the head of the page-->
+</head>
+
+<!--beginning the body of the page-->
+<body>
+
+<!--setting a theme for this section of code-->
+<div data-role="page" data-theme="c">
+
+<!--creating the panel with an ID called myPanel-->
+  <div data-role="panel" id="myPanel" data-position="right" data-display="overlay" data-theme = "c"> 
+  <!--adding a header-->
+    <h2>Menu</h2>
+	<br>
+	<!--creating a list view of buttons on the panel-->
+    <ul data-role="listview" data-insert="true">
+	<li><a href="Products.html">Products</a></li>
+	<li><a href="Promotions.html">Promotions</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+	<li><a href="Findus.html">Find Us</a></li>
+	<li><a href="Contactus.html">Contact Us</a></li>
+	</ul>
+  </div> 
+
+<!--create a header-->
+<div data-role="header" data-theme="c">
+<!--adding an image-->
+<img src="greenwich.png"> 
+
+<!--create a button to link to the panel-->
+<div data-role="main" data-position="right" class="ui-content">
+ <a href="#myPanel" class="ui-icon-bars ui-btn-icon-notext ui-btn-right"></a>
+   </div>
+</div>
+
+<!--adding an image with a set size-->
+<img src="bar.jpg" style = "width:480px;height:150px;"> 
+
+<div data-role="content" data-theme="c" >
+
+<!--adding a header-->
+<h2> Welcome to the Greenwich Fitness app! </h2>
+
+	<!--declaring that the information in this section should you the status id-->
+	<div id="status">
+	<p><b>SWIPE RIGHT HERE TO SEE OUT BIGGEST LOOSER THIS MONTH!</b></p>
+	</div>
+
+	<!--paragraph with floating images in it, text is also justified-->
+	<p align = "justify" >We aim to keep your fitness at its best even when you're not at the gym.<img src="cycling.jpg" style = "float:left">
+	We have been improving peoples fitness for over 20 years now. We have over 100 members and 20 excellent members over staff that are all there to help you on your fitness journey.
+	</p>
+	<br>
+	<!--paragraph with floating images in it, text is also justified-->
+	<p align = "justify" >
+	<img src="weights.jpg" style = "float:right">You'll be able to view the products and services that we have to offer. As well as some exclusive offers that will help reduce your spending and body fat.
+	</p>
+</div>
+
+<!--script to run when the section with the status id is swiped to the right-->
+<script>
+$("body").bind("swiperight",function(e){
+	<!--when swiped the text will appear-->
+	$("#status").append("<b>Ashleigh Jones</b><br/>");
+	});
+</script>
+
+<!--footer-->
+<div data-role="footer" data-position="fixed" data-theme="c">
+	<!--navbar created in the footer at the bottom of the page-->
+	<div data-role="navbar" data-icompos="bottom">
+	<!--links are put next to each other with icons and text-->
+	<ul>
+	<li><a href="gallery.html" data-icon="camera">Gallery</a></li>
+	<li><a href="Contactus.html" data-icon="mail">Contact Us</a></li>
+	<li><a href="Findus.html" data-icon="navigation">Find Us</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+

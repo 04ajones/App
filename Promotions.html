@@ -1,0 +1,81 @@
+<!Doctype html> 
+<html>
+<!--begin page head-->
+<head>
+<!--title added to the page-->
+<title> Promotions </title>
+
+<!--linking the stylesheets and also the jquery script code-->
+<link rel="stylesheet" href="themes/Purple.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!--ending the head of the page-->
+</head>
+
+<!--beginning the body of the page-->
+<body>
+
+<!--setting a theme for this section of code-->
+<div data-role="page" data-theme="c">
+
+<!--creating the panel with an ID called myPanel-->
+  <div data-role="panel" id="myPanel" data-position="right" data-display="overlay" data-theme = "c"> 
+    <!--adding a header-->
+    <h2>Menu</h2>
+	<br>
+	<!--creating a list view of buttons on the panel-->
+    <ul data-role="listview" data-insert="true">
+	<li><a href="Home.html">Home</a></li>
+	<li><a href="Products.html">Products</a></li>
+	<li><a href="Gallery.html">Gallery</a></li>
+	<li><a href="Findus.html">Find Us</a></li>
+	<li><a href="Contactus.html">Contact Us</a></li>
+	</ul>
+  </div> 
+
+  <!--create a header-->
+<div data-role="header" data-theme="c">
+<!--adding an image-->
+<img src="greenwich.png"> 
+
+<!--create a button to link to the panel-->
+<div data-role="main" data-position="right" class="ui-content">
+ <a href="#myPanel" class="ui-icon-bars ui-btn-icon-notext ui-btn-right"></a>
+   </div>
+</div>
+
+<!--adding an image with a set size-->
+<img src="bar.jpg" style = "width:480px;height:150px;"> 
+
+<div data-role="content" data-theme="c">
+<!--adding a header-->
+<h2> Promotions </h2>
+	<!--paragraph with some text in-->
+	<p> We have a number of different membership promotions going on at the moment. To find out more have a look at our promotional video below!
+	</p>
+	<!--video added to an iframe-->
+	<iframe width="450" height="275" src="https://www.youtube.com/embed/hcR7x6ZlH60" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!--footer-->
+<div data-role="footer" data-position="fixed" data-theme="c">
+<!--navbar created in the footer at the bottom of the page-->
+	<div data-role="navbar" data-icompos="bottom">
+	<!--links are put next to each other with icons and text-->
+	<ul>
+	<li><a href="Gallery.html" data-icon="camera">Gallery</a></li>
+	<li><a href="Contactus.html" data-icon="mail">Contact Us</a></li>
+	<li><a href="Findus.html" data-icon="navigation">Find Us</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
